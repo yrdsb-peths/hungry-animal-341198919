@@ -23,5 +23,8 @@ public class MyWorld extends World
         
         Croc byl = new Croc();
         addObject(byl,350,200);
+        
+        RealJoryl juan = new RealJoryl();
+        addObject(juan,400,300);
     }
 }

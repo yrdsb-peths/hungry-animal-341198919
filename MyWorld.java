@@ -29,6 +29,8 @@ public class MyWorld extends World
     public void createJoryl()
     {
         RealJoryl juan = new RealJoryl();
-        addObject(juan,400,300);   
+        int x = Greenfoot.getRandomNumber(600);
+        int y = Greenfoot.getRandomNumber(400);
+        addObject(juan,x,y);   
     }
 }

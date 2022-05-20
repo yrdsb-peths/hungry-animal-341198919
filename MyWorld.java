@@ -22,9 +22,13 @@ public class MyWorld extends World
         addObject(jeorje,300,200);
         
         Croc byl = new Croc();
-        addObject(byl,350,200);
+        addObject(byl,500,200);
         
+    }
+    
+    public void createJoryl()
+    {
         RealJoryl juan = new RealJoryl();
-        addObject(juan,400,300);
+        addObject(juan,400,300);   
     }
 }

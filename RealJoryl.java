@@ -20,6 +20,7 @@ public class RealJoryl extends Actor
         if(isTouching(RealJoryl.class))
         {
             removeTouching(RealJoryl.class);
+            
         }
     }
 }

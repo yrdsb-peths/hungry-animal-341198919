@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    public int countJoryl = 0;
+    Label jorylCount;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -24,6 +26,25 @@ public class MyWorld extends World
         Croc byl = new Croc();
         addObject(byl,500,200);
         
+        jorylCount = new Label(0,30);
+        addObject(jorylCount,20,20);
+    }
+    
+    
+    
+    public void CountJoryl()
+    {
+        jorylCount.setValue(countJoryl);
+    }
+    
+    public void decreaseJorylCount()
+    {
+        countJoryl--;
+    }
+    
+    public void increaseJorylCount()
+    {
+        countJoryl++;
     }
     
     public void createJoryl()

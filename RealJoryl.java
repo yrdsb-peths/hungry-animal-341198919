@@ -11,17 +11,13 @@ public class RealJoryl extends Actor
     public void act()
     {
         // Add your action code here.
-        if(Greenfoot.isKeyDown("d")){
-            move(3);
-        }
-        if(Greenfoot.isKeyDown("a")){
-            move(-3);
-        }
+
+        move(3);
 
         if(isTouching(RealJoryl.class))
         {
             removeTouching(RealJoryl.class);
-            
+            MyWorld world = (MyWorld) getWorld();
             world.decreaseJorylCount();
         }
     }

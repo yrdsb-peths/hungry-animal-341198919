@@ -10,7 +10,7 @@ public class MyWorld extends World
 {
     public int countJoryl = 0;
     Label jorylCount;
-    
+
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,34 +19,31 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        
+
         Hippo jeorje = new Hippo();
         addObject(jeorje,300,200);
-        
+
         Croc byl = new Croc();
         addObject(byl,500,200);
-        
+
         jorylCount = new Label(0,30);
         addObject(jorylCount,20,20);
     }
+
     
-    
-    
-    public void CountJoryl()
-    {
-        jorylCount.setValue(countJoryl);
-    }
     
     public void decreaseJorylCount()
     {
         countJoryl--;
+        jorylCount.setValue(countJoryl);
     }
-    
+
     public void increaseJorylCount()
     {
         countJoryl++;
+        jorylCount.setValue(countJoryl);
     }
-    
+
     public void createJoryl()
     {
         RealJoryl juan = new RealJoryl();

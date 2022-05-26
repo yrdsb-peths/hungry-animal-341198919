@@ -28,6 +28,8 @@ public class Croc extends Actor
         {
             MyWorld world = (MyWorld) getWorld();
             world.createJoryl();
+            
+            world.increaseJorylCount();
         }
     }
 }

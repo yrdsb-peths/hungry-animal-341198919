@@ -17,10 +17,12 @@ public class RealJoryl extends Actor
         if(Greenfoot.isKeyDown("a")){
             move(-3);
         }
+
         if(isTouching(RealJoryl.class))
         {
             removeTouching(RealJoryl.class);
             
+            world.decreaseJorylCount();
         }
     }
 }

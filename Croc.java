@@ -8,10 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Croc extends Actor
 {
+    GreenfootSound ohYeah = new GreenfootSound("ohYeah.mp3");
     public void act()
     {
-        // Add your action code here.
-        
         if(Greenfoot.isKeyDown("d")){
             move(2);
         }
@@ -29,6 +28,7 @@ public class Croc extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createJoryl();
             
+            ohYeah.play();
             world.increaseJorylCount();
         }
     }

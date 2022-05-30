@@ -1,6 +1,7 @@
 #Greenfoot project file
 class.Croc.image=alligator.png
 class.Hippo.image=hippo.png
+class.MyWorld.image=MV5BNjQwOTExMzgwNV5BMl5BanBnXkFtZTcwOTYwODI0Ng@@._V1_.jpg
 class.RealJoryl.image=real\ REAL\ SMOL\ Joryl.png
 dependency1.from=MyWorld
 dependency1.to=Label

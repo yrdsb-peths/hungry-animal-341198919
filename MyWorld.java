@@ -51,4 +51,13 @@ public class MyWorld extends World
         int y = Greenfoot.getRandomNumber(400);
         addObject(juan,x,y);   
     }
+    
+    public void endGame()
+    {
+        Label ended = new Label("La fin",300);
+        if(countJoryl == 7)
+        {
+            addObject(ended,300,200);
+        }
+    }
 }

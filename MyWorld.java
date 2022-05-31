@@ -30,7 +30,12 @@ public class MyWorld extends World
         addObject(jorylCount,20,20);
     }
 
-    
+    public void createJasonsFuture()
+    {
+        Avengers_Level_Threat meat = new Avengers_Level_Threat();
+        int x = Greenfoot.getRandomNumber(600);
+        addObject(meat,x,400);
+    }
     
     public void decreaseJorylCount()
     {
@@ -55,9 +60,6 @@ public class MyWorld extends World
     public void endGame()
     {
         Label ended = new Label("La fin",300);
-        if(countJoryl == 7)
-        {
             addObject(ended,300,200);
-        }
     }
 }
